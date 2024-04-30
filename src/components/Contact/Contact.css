@@ -1,0 +1,154 @@
+.connect{
+
+    
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(100, 91, 228);
+    /* border: 3pt solid red; */
+}
+
+
+
+
+.form{
+    box-shadow: 2px 3px 5px 5px rgb(100, 91, 228);
+    /* border: 3pt solid blue; */
+    margin-top: 4%;
+    width: 45%;
+    margin-left: 5%;
+    
+    
+
+}
+
+input{
+    background-color: inherit
+}
+textarea{
+    background-color: inherit;
+}
+.map-box{
+    
+    /* border: 3pt solid red; */
+    width: 40%;
+    margin-left: 3%;
+    margin-top: 3%;
+    
+
+
+
+}
+
+.formButton{
+    background-color: #191414;
+    transition: filter 0.3s, transform 0.6s;
+}
+
+.formButton:hover{
+    background-color: aliceblue;
+    transform: scale(1.1);
+    color: #191414;
+}
+
+.contactUs{
+    color: black
+}
+
+
+.connect-container{
+
+    /* margin-bottom: -5%; */
+    padding: 10%;
+
+    background-image: url('../../assets/contactBg.jpg');
+    background-size: cover;
+    
+}
+
+.enter-name{
+    transition: transform 0.6s ease, background-color 0.9s ease; 
+    background-color: inherit;
+}
+
+.enter-name:hover{
+    transform: scale(1.10) translateX(3rem);
+    background-color: rgb(151, 151, 241);
+}
+
+
+.enter-email{
+    transition: transform 0.6s ease, background-color 0.9s ease; 
+    background-color: inherit;
+}
+
+.enter-email:hover{
+    transform: scale(1.10) translateX(3rem);
+    background-color: rgb(241, 177, 151);
+}
+
+
+.enter-message{
+    transition: transform 0.6s ease, background-color 0.9s ease; 
+    height: 120px;
+    background-color: inherit;
+}
+
+.enter-message:hover{
+    transform: scale(1.10) translateX(3rem);
+    background-color: rgb(117, 211, 228);
+}
+.enter-phone{
+    transition: transform 0.6s ease, background-color 0.9s ease; 
+    background-color: inherit;
+}
+
+.enter-phone:hover{
+    transform: scale(1.10) translateX(3rem);
+    background-color: rgb(209, 212, 14);
+}
+
+.contactContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contactContent {
+        flex-direction: column;
+    }
+}
+
+/* For mobile phones (600px and below) */
+@media only screen and (max-width: 600px) {
+    .contactContent {
+        flex-direction: column;
+    }
+
+    .map-box{
+
+        width: 220px;
+        height: 500px;
+    }
+    .form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .contactContent {
+        flex-direction: column;
+    }
+
+    .map-box{
+
+        width: 160px;
+        height: 500px;
+    }
+    .form{
+        width: 100%;
+    }
+}

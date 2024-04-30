@@ -1,10 +1,49 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css'
-import MapLeaflet from '../Contact/MapLeaflet/MapLeaflet';
-
+import MapLeaflet from '../Contact/MapLeaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import './Footer.css';
 
 const Footer = () => {
+  const fixedLocation = [13.0270199,77.6334501]; // Fixed location coordinates
+  const [userLocation, setUserLocation] = useState(null);
+
+  const redIcon = new L.Icon({
+    iconUrl:
+      "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+  });
+
+  useEffect(() => {
+    // Get user's geolocation
+    navigator.geolocation.getCurrentPosition(
+      (geoLocation) => {
+        const { latitude, longitude } = geoLocation.coords;
+        setUserLocation({ lat: latitude, lng: longitude });
+      },
+      (error) => console.error("Error getting geolocation:", error),
+      { enableHighAccuracy: true }
+    );
+  }, []);
+
+  const handleMarkerClick = () => {
+    const [lat, lng] = fixedLocation;
+    const description = "Description of the fixed location";
+
+    // Open Google Maps URL in a new tab
+    window.open(
+      `https://www.google.com/maps/search/?api=1&query=${lat},${lng}&query_place_id=${description}`
+    );
+  };
+
+
+
+
+
   return (
     <footer className="footer">
       <div className="footerBlock1 mx-auto w-full max-w-screen-xl">
@@ -55,13 +94,7 @@ const Footer = () => {
 </div>
 
 
-          <div className="footerMap col-span-2 md:col-span-1">
-
-          <MapLeaflet className="mapFooter"/>
-
-
-
-          </div>
+                <MapLeaflet />
         </div>
       </div>
 
