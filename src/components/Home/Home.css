@@ -2,7 +2,7 @@
 .home{
     background-image: url('../../assets/homeBg2.jpg');
 
-    height: auto;
+    
 
     width: 100%;
 
@@ -12,19 +12,21 @@
 }
 
 .titleText {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .10em solid orange; /* The typewriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    letter-spacing: .15em; /* Adjust as needed */
-    text-align: left; /* Align text to the left */
-    animation: 
-      typing-desktop 7.5s steps(40, end) forwards,
-      blink-caret .75s step-end 7.5s infinite;
-  }
+  overflow: hidden;
+  border-right: .02em solid orange; /* Decreased thickness */
+  white-space: nowrap;
+  letter-spacing: .15em;
+  text-align: left;
+  animation: 
+    typing-desktop 7.5s steps(40, end) forwards,
+    blink-caret .75s step-end 7.5s infinite;
+   /* Decreased font size */
+}
+
   
   @keyframes typing-desktop {
     from { width: 0 }
-    to { width: 32% }
+    to { width: 30% }
   }
   
   /* Media query for mobile and tablet devices */

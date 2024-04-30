@@ -28,7 +28,7 @@ function Navbar() {
     const DrawerList = (
       <Box
         sx={{ width: 250,
-      backgroundColor: 'white',
+      backgroundColor: 'black',
       padding: 4 , 
       height: 700
       
@@ -38,12 +38,11 @@ function Navbar() {
               <ListItemButton>
               <ListItem>
                 <ListItemIcon>
-                     <HomeIcon />       
+                     <HomeIcon style={{color: 'white'}}/>       
                 </ListItemIcon>
                 
-                <ListItemText primary={"Home"} style={{
-                  color : 'black'
-                }}/>
+                <ListItemText primary={"Home"} className='text-white hover:text-amber-300 transition ease-in-out
+                duration-300'/>
                 </ListItem>
                 </ListItemButton>
                 </Link>
@@ -52,42 +51,54 @@ function Navbar() {
                 <ListItemButton>
                 <ListItem>
                 <ListItemIcon>
-                     <Person/>            
+                     <Person style={{color: 'white'}}/>            
                 </ListItemIcon>
                 
-                <ListItemText primary={"About"} />
+                <ListItemText primary={"About"} 
+                  className='text-white hover:text-amber-300 transition ease-in-out
+                duration-300'
+                />
                 </ListItem>
                 </ListItemButton>
                 </Link>
 
 
-                <ListItemButton>
-                <ListItem>
-                <ListItemIcon>
-                     <Collections/>          
-                </ListItemIcon>
                 
-                <ListItemText primary={"Portfolio"} />
-                </ListItem>
-                </ListItemButton>
-
                 <Link to="/services" >
                <ListItemButton>
                 <ListItem>
                 <ListItemIcon>
-                     <Code/>              
-                </ListItemIcon>
-                
-                
-                <ListItemText primary={"Services"} />
+                     <Code style={{color: 'white'}}/>              
+                </ListItemIcon>               
+                <ListItemText primary={"Services"} 
+                  className='text-white hover:text-amber-300 transition ease-in-out
+                duration-300'
+                />
                 </ListItem>
                 </ListItemButton>
                 </Link>
+
+                
+                <Link to="/portfolio" >
+                <ListItemButton>
+                <ListItem>
+                <ListItemIcon>
+                     <Collections style={{color: 'white'}}/>          
+                </ListItemIcon>
+                
+                <ListItemText primary={"Portfolio"} 
+                  className='text-white hover:text-amber-300 transition ease-in-out
+                duration-300'
+                />
+                </ListItem>
+                </ListItemButton>
+                </Link>
+
                 
                 
            
         </List>
-        <Divider />
+        <Divider sx={{backgroundColor: 'white'}}/>
         <List>
           {[{
             contact : 'Contact',
@@ -100,10 +111,16 @@ function Navbar() {
              key={index} disablePadding>
             <Link to = {item.link}> 
               <ListItemButton>
-                <ListItemIcon>
+                <ListItemIcon
+                 style={{color: 'white'}}>
                   {item.icon}
                 </ListItemIcon>
-                <ListItemText primary={item.text} />
+                <ListItemText
+                 className='text-white hover:text-amber-300 transition ease-in-out
+                duration-300'
+                 primary={item.text} 
+                  
+                />
               </ListItemButton>
               </Link>
             </ListItem>
@@ -113,7 +130,7 @@ function Navbar() {
     );
   
     return (
-      <div className=' bg-inherit sticky top-24 z-50 -my-10 '>
+      <div className='navButton bg-inherit sticky top-24 z-50 -my-10 '>
         <Button onClick={toggleDrawer(true)}><RememberMeIcon/></Button>
 
         <Drawer open={open} onClose={toggleDrawer(false)}>

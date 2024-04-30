@@ -14,6 +14,7 @@ import Services from "./components/Services/Services";
 import WebDev from "./components/Services/Inno Services/WebDev";
 import WebDesign from "./components/Services/Inno Services/WebDesign";
 import AppDev from "./components/Services/Inno Services/Appdev";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Route path="/appdev" element={<AppDev />} />
       <Route path="/webdesign" element={<WebDesign />} /> 
           <Route path="/webdev" element={<WebDev />} /> 
+      <Route path="/portfolio" element= {<Portfolio/>}/>
       <Route path="/contact" element= {<Contact/>}/>
       
       </Routes>
