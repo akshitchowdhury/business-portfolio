@@ -15,6 +15,7 @@ import WebDev from "./components/Services/Inno Services/WebDev";
 import WebDesign from "./components/Services/Inno Services/WebDesign";
 import AppDev from "./components/Services/Inno Services/Appdev";
 import Portfolio from "./components/Portfolio/Portfolio";
+import SocialIcons from "./components/Social Icons/SocialIcons";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     
     <Router>
     <Navbar/>
+    <SocialIcons/>
       <Routes>
       
       <Route path="/" element= {<Home/>}/>

@@ -105,7 +105,8 @@ function Navbar() {
             link : "/contact",
             text: "Contact",
             
-            icon : <Contacts/>}].map((item, index) => (
+            icon : <Contacts/>},
+            ].map((item, index) => (
             <ListItem
             style={{marginLeft: '9%'}}
              key={index} disablePadding>
