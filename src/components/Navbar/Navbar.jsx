@@ -29,7 +29,7 @@ function Navbar() {
       <Box
         sx={{ width: 250,
       backgroundColor: 'white',
-      padding: 2,
+      padding: 4 , 
       height: 700
       
        }} role="presentation" onClick={toggleDrawer(false)}>
@@ -71,15 +71,18 @@ function Navbar() {
                 </ListItem>
                 </ListItemButton>
 
+                <Link to="/services" >
                <ListItemButton>
                 <ListItem>
                 <ListItemIcon>
                      <Code/>              
                 </ListItemIcon>
                 
+                
                 <ListItemText primary={"Services"} />
                 </ListItem>
                 </ListItemButton>
+                </Link>
                 
                 
            
@@ -90,8 +93,11 @@ function Navbar() {
             contact : 'Contact',
             link : "/contact",
             text: "Contact",
+            
             icon : <Contacts/>}].map((item, index) => (
-            <ListItem key={index} disablePadding>
+            <ListItem
+            style={{marginLeft: '9%'}}
+             key={index} disablePadding>
             <Link to = {item.link}> 
               <ListItemButton>
                 <ListItemIcon>

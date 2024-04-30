@@ -2,7 +2,7 @@
 .home{
     background-image: url('../../assets/homeBg2.jpg');
 
-    height: 100vh;
+    height: auto;
 
     width: 100%;
 
@@ -24,7 +24,7 @@
   
   @keyframes typing-desktop {
     from { width: 0 }
-    to { width: 52% }
+    to { width: 32% }
   }
   
   /* Media query for mobile and tablet devices */

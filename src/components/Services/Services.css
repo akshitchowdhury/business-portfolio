@@ -1,5 +1,5 @@
 .service-section {
-    height: 70vh; /* Adjust height as needed */
+    height: 100vh; /* Adjust height as needed */
     /* background-image: url('../../assets/serviceBg.jpg'); */
 
     background-size: cover;
@@ -19,8 +19,9 @@
 }
 
 .Services{
-    background-image: url('../../assets/serviceBg2.jpg');
+    background-image: url('../../assets/serviceBG.jpg');
     background-size: cover;
     background-attachment: fixed;
+    
 
 }

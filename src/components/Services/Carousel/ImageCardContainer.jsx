@@ -1,10 +1,8 @@
 import React from 'react';
-import c1 from '../../../assets/AppDev.jpg';
-import c2 from '../../../assets/webDesign.jpg';
+import c1 from '../../../assets/app2.jpg';
+import c2 from '../../../assets/webDesign2.jpg';
 import c3 from '../../../assets/webDevelopment.jpg';
-import c4 from '../../../assets/digitalMarkt.webp';
-import c5 from '../../../assets/brandDesign.jpg';
-import c6 from '../../../assets/socialMedia.jpg';
+
 import './ImageCardContainer.css'
 import { Link } from 'react-router-dom';
 
@@ -19,7 +17,7 @@ const ImageCard = ({linkUrl, imageUrl, text }) => {
         className="w-full h-48 object-cover transition-opacity duration-300 ease-in-out"
       />
       <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100 bg-black bg-opacity-50">
-        <p className="text-white">{text}</p>
+        <p className="text-sm text-white">{text}</p>
       </div>
       
     </div>
@@ -44,25 +42,11 @@ const ImageCardContainer = () => {
       text: 'Web Development',
       linkUrl: "/webdev"
     },
-    {
-      imageUrl: c4,
-      text: 'Digital Marketing',
-      linkUrl: "/digitalmarket"
-    },
-    {
-      imageUrl: c5,
-      text: 'Logo Deesigning',
-      linkUrl: "/logodesign"
-    },
-    {
-      imageUrl: c6,
-      text: 'Social Media',
-      linkUrl: "/socialmedia"
-    },
+    
   ];
 
   return (
-    <div className="Icontainer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+    <div className="Icontainer  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
       {cards.map((card, index) => (
              <ImageCard key={index} imageUrl={card.imageUrl} text={card.text} linkUrl={card.linkUrl} />
       ))}
