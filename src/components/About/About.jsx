@@ -61,7 +61,7 @@ const About = () => {
           </div>
           <div className="flex flex-col mx-4 md:mx-28 p-11 gap-11">
             <h2 className="text-4xl md:text-4xl font-bold mt-4  text-white">
-              Welcome to my Lair
+              Welcome to my Page!
             </h2>
             <p className="text-sm md:text-lg text-white mt-2 max-w-3xl md:max-w-2xl"
             >

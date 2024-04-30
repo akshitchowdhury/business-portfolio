@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressBook, faChild, faEnvelope, faPaw, faPhone, } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './SocialIcons2.css'
 import WhatsApp from './Whatsapp/Whatsapp';
 
@@ -17,9 +17,10 @@ const SocialIcons = () => {
     return ( <>
       <div className="discountButton 
       md:flex-col
-      relative sticky top-1/4 md:top-1/2 sm:top-1/4 left-6 transform -translate-x-1/2 w-12 h-12 p-4 bg-inherit shadow-md rounded-full">
+      relative sticky top-1/4 md:top-1/2
+       sm:top-1/4 left-6 transform -translate-x-1/2 w-12 h-12 p-4 bg-inherit shadow-md rounded-full">
   <button
-    className={`w-12 h-12 bg-${isOpen ? 'blue' : 'green'}-500 text-white rounded-full transition duration-300 flex  items-center justify-center`}
+    className={`w-12 h-12   bg-${isOpen ? 'blue' : 'amber'}-500 text-white rounded-full transition duration-300 flex  items-center justify-center`}
     onClick={toggleAccordion}
   > 
     {isOpen ? <FontAwesomeIcon icon={faAddressBook}/> : <FontAwesomeIcon icon={faAddressBook}/>}
@@ -37,7 +38,7 @@ const SocialIcons = () => {
       <div ref={ref} className='social-icons flex-col md:flex-col absolute top-16 md:top-20 left-16 transform -translate-x-1/2 p-2 rounded-lg' style={styles.container}>
         <a><WhatsApp/></a>
         <a href="akshitchowdhury@gmail.com" style={styles.link}><FontAwesomeIcon icon={faEnvelope} style={styles.icon('#EA4335', '#EA4335')} /></a>
-        <a href="https://www.facebook.com/profile.php?id=100063857537767&mibextid=ZbWKwL" style={styles.link}><FontAwesomeIcon icon={faFacebook} style={styles.icon('#3589EA', '#EA4335')} /></a>
+        <a href="www.linkedin.com/in/pratikshit-chowdhury-8a3411162" style={styles.link}><FontAwesomeIcon icon={faLinkedinIn} style={styles.icon('#3589EA', '#EA4335')} /></a>
         <a href="tel:+91 8638498584" style={styles.link}><FontAwesomeIcon icon={faPhone} style={styles.icon('#34A853', '#34A853')} /></a>
       </div>
     )}
