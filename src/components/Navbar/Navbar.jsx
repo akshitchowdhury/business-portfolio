@@ -12,11 +12,12 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
+import RememberMeIcon from '@mui/icons-material/RememberMe';
 import { Code, Collections,  Contacts,  Person } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import About from '../About/About';
 import Home from '../Home/Home';
-
+import './Navbar.css'
 function Navbar() {
     const [open, setOpen] = useState(false);
   
@@ -106,8 +107,8 @@ function Navbar() {
     );
   
     return (
-      <div className='bg-inherit sticky top-24 z-50 -my-10 '>
-        <Button onClick={toggleDrawer(true)}><RadioButtonCheckedIcon/></Button>
+      <div className=' bg-inherit sticky top-24 z-50 -my-10 '>
+        <Button onClick={toggleDrawer(true)}><RememberMeIcon/></Button>
 
         <Drawer open={open} onClose={toggleDrawer(false)}>
           {DrawerList}

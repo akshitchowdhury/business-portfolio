@@ -12,7 +12,7 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-clip ">
     
     <Router>
     <Navbar/>
