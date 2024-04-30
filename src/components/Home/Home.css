@@ -1,0 +1,55 @@
+
+.home{
+    background-image: url('../../assets/homeBg2.jpg');
+
+    height: 100vh;
+
+    width: 100%;
+
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+}
+
+.titleText {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    text-align: left; /* Align text to the left */
+    animation: 
+      typing-desktop 7.5s steps(40, end) forwards,
+      blink-caret .75s step-end 7.5s infinite;
+  }
+  
+  @keyframes typing-desktop {
+    from { width: 0 }
+    to { width: 52% }
+  }
+  
+  /* Media query for mobile and tablet devices */
+  @media (max-width: 768px) {
+    .titleText {
+      white-space: normal; /* Allow text to wrap */
+      width: 100%; /* Set width to 100% for text to fill the container */
+      animation: typing-mobile 7.5s steps(40, end) forwards,
+      blink-caret .75s step-end 7.5s infinite;
+      border-right: .10em solid orange;
+
+    }
+    
+    @keyframes typing-mobile {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+      }
+  }
+    
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+  }
+  
+  
