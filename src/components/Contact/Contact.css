@@ -6,7 +6,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: rgb(100, 91, 228);
     /* border: 3pt solid red; */
 }
 
@@ -62,8 +61,8 @@ textarea{
 
     /* margin-bottom: -5%; */
     padding: 10%;
-
-    background-image: url('../../assets/contactBg.jpg');
+/* 
+    background-image: url('../../assets/contactBg.jpg'); */
     background-size: cover;
     
 }
