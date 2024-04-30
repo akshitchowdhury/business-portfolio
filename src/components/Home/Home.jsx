@@ -60,7 +60,7 @@ const Home = () => {
                   Explore more
                 </button>
               </Link>
-              <Link to="/services">
+              <Link to="/contact">
                 <button className="py-3 px-3 text-lg md:text-xl text-white bg-opacity-15 ring-2 ring-amber-300
                  rounded-sm transition duration-300 ease-in-out hover:bg-white hover:shadow-md hover:border-none
                   hover:ring-0 hover:text-xl hover:text-black">
