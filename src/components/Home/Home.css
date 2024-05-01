@@ -13,7 +13,7 @@
 
 .titleText {
   overflow: hidden;
-  border-right: .02em solid orange; /* Decreased thickness */
+  border-right: .02em solid white; /* Decreased thickness */
   white-space: nowrap;
   letter-spacing: .15em;
   text-align: left;

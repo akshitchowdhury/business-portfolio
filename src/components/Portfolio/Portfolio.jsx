@@ -24,15 +24,15 @@ const Portfolio = () => {
 
 <div
             className="text-white md:absolute  
-      transition ease-in-out duration-300 
-      absolute inset-y-48  md:inset-24 text-3xl 
+      transition ease-in-out duration-300 mx-4
+  md:mx-0      absolute inset-y-48  md:inset-24 text-3xl 
       md:text-7xl  font-semibold  -my-4"
           >
             Crafting Digital Experiences:
              
             <br></br>
             <hr className='bg-white w-full h-1 my-2'></hr>
-            <h1 className= "text-3xl text-sky-200 mx-4 my-4">Explore the Intersection of Code and Creativity</h1>
+            <h1 className= "text-lg md:text-3xl text-sky-200 mx-4 my-4">Explore the Intersection of Code and Creativity</h1>
           </div>
 
     

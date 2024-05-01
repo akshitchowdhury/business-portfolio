@@ -39,10 +39,16 @@ const Home = () => {
             <p className="text-sm md:text-xl  "> Follow me on: 
               <span className="md:mx-36 my-6  md:-my-6  flex  flex-row">
              <a href="https://twitter.com/akshitchow" target= "blank"> 
-            <XIcon className="mx-4 "/></a>
-            <a href="https://www.instagram.com/" target= "blank"><Instagram className="mx-4"/></a>
-            <a href="www.linkedin.com/in/pratikshit-chowdhury-8a3411162" target= "blank"><LinkedIn className="mx-4"/></a>
-            <a href="https://github.com/akshitchowdhury" target= "blank"><GitHub className="mx-4"/></a>
+            <XIcon className="mx-4 hover:text-sky-800 transition ease-in-out
+            duration 300"/></a>
+            <a href="https://www.instagram.com/" target= "blank"><Instagram className="mx-4 hover:text-pink-500 transition ease-in-out
+            duration 300"/></a>
+            <a href="www.linkedin.com/in/pratikshit-chowdhury-8a3411162" target= "blank"><LinkedIn className="mx-4
+             hover:text-blue-600 transition ease-in-out
+            duration 300"/></a>
+            <a href="https://github.com/akshitchowdhury" target= "blank"><GitHub className="mx-4
+             hover:text-slate-700 transition ease-in-out
+            duration 300"/></a>
             
             
             

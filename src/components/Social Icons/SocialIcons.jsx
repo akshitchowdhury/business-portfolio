@@ -17,7 +17,7 @@ const SocialIcons = () => {
     return ( <>
       <div className="discountButton 
       md:flex-col
-      relative sticky top-1/4 md:top-1/2
+       sticky top-1/4 md:top-1/2
        sm:top-1/4 left-6 transform -translate-x-1/2 w-12 h-12 p-4 bg-inherit shadow-md rounded-full">
   <button
     className={`w-12 h-12   bg-${isOpen ? 'blue' : 'amber'}-500 text-white rounded-full transition duration-300 flex  items-center justify-center`}
