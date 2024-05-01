@@ -42,7 +42,8 @@ const MapLeaflet = () => {
     <MapContainer
       center={fixedLocation} // Set the center to the fixed location
       zoom={13}
-      className="custom-map-container"
+      className="custom-map-container 
+      "
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

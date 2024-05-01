@@ -42,19 +42,23 @@ const ContactComponent = forwardRef((props,ref) => {
 
 
   return ( <>
-  <div ref={ref} className='connect-container bg-black'>
+  <div ref={ref} className='connect-container bg-black flex-row
+  h-auto md:h-auto'>
   <h2 className="connect w-full lg:w-3/4 px-4 lg:p-4 lg:h-full rounded-lg
   text-white
     text-3xl md:text-4xl font-bold mb-4 text-center md:text-left mx-auto">Let's connect via this form!</h2>
 
-    <div className="contactContent flex flex-col lg:flex-row sm:flex-col gap-6" >
+    <div className="contactContent flex flex-row md:flex-col lg:flex-row sm:flex-row gap-6" 
+    >
 
-    <MapLeaflet className="map-box "/>
+    <MapLeaflet className="map-box  "/>
 
 
-    <div className="form w-full md:w-1/2 lg:w-1/2 px-4 lg:p-4 lg:h-full rounded-lg shadow-2xl">
+    <div className="form w-full
+    
+     md:w-1/2 lg:w-1/2 px-4 lg:p-4 lg:h-full h-auto md:h-auto rounded-lg shadow-2xl">
   <h2 className="contactUs text-2xl font-bold mb-4">Contact Us</h2>
-  <form className="space-y-4" onSubmit={handleSubmit}>
+  <form className="space-y-2   md:-my-0" onSubmit={handleSubmit}>
     <div>
       <label htmlFor="name" className="block font-semibold mb-1">Name</label>
       <input type="text" ref={nameRef} id="name" name="name" className="enter-name w-full px-4 py-2 border rounded-md" placeholder="Enter your name" />
@@ -81,6 +85,28 @@ const ContactComponent = forwardRef((props,ref) => {
     
 
     </div>
+
+    {/* <div className="contactCard text-white w-auto h-auto md:w-1/2 
+    lg:w-1/3 p-4 lg:p-4 lg:h-full lg:mt-28 mx-8 rounded-lg shadow-2xl bg-zinc-800
+hover:bg-amber-500 transition ease-in-out duration-300 ">
+  <h2 className="contactInfo text-xl font-semibold mb-4">Contact Information</h2>
+  <div className="flex flex-col space-y-2">
+    <div>
+      <h3 className="text-lg font-semibold">Address:</h3>
+      <p>Silverline Tours & Travels</p>
+      <p>Lokhandwala, Andheri West</p>
+      <p>Mumbai 400053</p>
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold">Phone:</h3>
+      <p>+91 - 7506526928</p>
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold">Email:</h3>
+      <p>bhaswatibom@gmail.com</p>
+    </div>
+  </div>
+</div> */}
 </div> 
 </>
   );
