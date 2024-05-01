@@ -28,8 +28,13 @@ const Portfolio = () => {
       absolute inset-y-48  md:inset-24 text-3xl 
       md:text-7xl  font-semibold  -my-4"
           >
-            Welcome to my Gallery
+            Crafting Digital Experiences:
+             
+            <br></br>
+            <hr className='bg-white w-full h-1 my-2'></hr>
+            <h1 className= "text-3xl text-sky-200 mx-4 my-4">Explore the Intersection of Code and Creativity</h1>
           </div>
+
     
 </div>
 
@@ -52,8 +57,9 @@ const Portfolio = () => {
               hover:shadow-lg transition duration-300 ease-in-out">
           <img src= {i1} alt="Placeholder" className="w-full rounded h-1/2" />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Empowering Innovation</h3>
-            <p className="text-gray-700 text-sm">At Innomatrics Technologies, we empower innovation by providing cutting-edge tech solutions tailored to meet the needs of our clients.</p>
+            <h3 className="text-xl font-semibold mb-2">Bint Al Hind </h3>
+            <p className="text-gray-700 text-sm">An incense stick e commerse website displayinng their products adn allowing client to reach out 
+            to them for contact.</p>
           </div>
         </div>
         {/* Card 2 */}
@@ -62,8 +68,8 @@ const Portfolio = () => {
               hover:shadow-lg transition duration-300 ease-in-out">
           <img src={i2} alt="Placeholder" className="w-full h-1/2" />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Driving Digital Transformation</h3>
-            <p className="text-gray-700 text-sm">Our mission is to drive digital transformation for businesses by leveraging cutting-edge technologies.</p>
+            <h3 className="text-xl font-semibold mb-2">KK Industries</h3>
+            <p className="text-gray-700 text-sm">An online website for a fabricaionn industry with description and access to their services.</p>
           </div>
         </div>
         {/* Card 3 */}
@@ -72,8 +78,8 @@ const Portfolio = () => {
               hover:shadow-lg transition duration-300 ease-in-out">
           <img src={i3} alt="Placeholder" className="w-full h-1/2" />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Delivering Excellence</h3>
-            <p className="text-gray-700 text-sm">We are committed to delivering excellence by providing high-quality, reliable, and scalable tech solutions.</p>
+            <h3 className="text-xl font-semibold mb-2">Infinty Travels</h3>
+            <p className="text-gray-700 text-sm">A travels and transportation business with features to booka ride and more.</p>
           </div>
         </div>
         {/* Card 4 */}
@@ -82,8 +88,8 @@ const Portfolio = () => {
               hover:shadow-lg transition duration-300 ease-in-out">
           <img src={i4} alt="Placeholder" className="w-full h-1/2" />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Enabling Growth</h3>
-            <p className="text-gray-700 text-sm">Our mission is to enable growth for our clients by offering innovative tech solutions that empower them to adapt, evolve.</p>
+            <h3 className="text-xl font-semibold mb-2">Poke Store</h3>
+            <p className="text-gray-700 text-sm">A client side web design for an online Poke dtore owned by an European client.</p>
           </div>
         </div>
 
@@ -92,8 +98,8 @@ const Portfolio = () => {
               hover:shadow-lg transition duration-300 ease-in-out">
           <img src={i5} alt="Placeholder" className="w-full h-1/2" />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Enabling Growth</h3>
-            <p className="text-gray-700 text-sm">Our mission is to enable growth for our clients by offering innovative tech solutions that empower them to adapt, evolve.</p>
+            <h3 className="text-xl font-semibold mb-2">Alwyn Packers & Movers</h3>
+            <p className="text-gray-700 text-sm">A Packers and movers website with features to contact; view videos and avail services.</p>
           </div>
         </div>
 
@@ -102,8 +108,8 @@ const Portfolio = () => {
               hover:shadow-lg transition duration-300 ease-in-out">
           <img src={i6} alt="Placeholder" className="w-full h-1/2" />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Enabling Growth</h3>
-            <p className="text-gray-700 text-sm">Our mission is to enable growth for our clients by offering innovative tech solutions that empower them to adapt, evolve.</p>
+            <h3 className="text-xl font-semibold mb-2">Play Pawws</h3>
+            <p className="text-gray-700 text-sm">Online business website for kid's play zone arena with subscription features.</p>
           </div>
         </div>
 
@@ -112,8 +118,9 @@ const Portfolio = () => {
               hover:shadow-lg transition duration-300 ease-in-out">
           <img src={i7} alt="Placeholder" className="w-full h-1/2" />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Enabling Growth</h3>
-            <p className="text-gray-700 text-sm">Our mission is to enable growth for our clients by offering innovative tech solutions that empower them to adapt, evolve.</p>
+            <h3 className="text-xl font-semibold mb-2">Silverline Tours & Travels</h3>
+            <p className="text-gray-700 text-sm">A travels and tours company whose business website was built using cutting edge tech and making it 
+            user centric.</p>
           </div>
         </div>
 
@@ -122,8 +129,8 @@ const Portfolio = () => {
               hover:shadow-lg transition duration-300 ease-in-out">
           <img src={i8} alt="Placeholder" className="w-full h-1/2" />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Enabling Growth</h3>
-            <p className="text-gray-700 text-sm">Our mission is to enable growth for our clients by offering innovative tech solutions that empower them to adapt, evolve.</p>
+            <h3 className="text-xl font-semibold mb-2">Innomatrics Technologies</h3>
+            <p className="text-gray-700 text-sm">A client side business wensite for a tech consultant company.</p>
           </div>
         </div>
 
@@ -132,8 +139,8 @@ const Portfolio = () => {
               hover:shadow-lg transition duration-300 ease-in-out">
           <img src={i9} alt="Placeholder" className="w-full h-1/2" />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Enabling Growth</h3>
-            <p className="text-gray-700 text-sm">Our mission is to enable growth for our clients by offering innovative tech solutions that empower them to adapt, evolve.</p>
+            <h3 className="text-xl font-semibold mb-2">Innomatrics Billing Software</h3>
+            <p className="text-gray-700 text-sm">A Full stack billing software/app to track and generate invoice for clients.</p>
           </div>
         </div>
       </div>

@@ -63,7 +63,16 @@ const Services = () => {
       
       "
           >
-      <p className="backdrop-filter backdrop-blur-md rounded-sm h-28 p-4"> Providing the best Services</p>     
+      <p className=" rounded-sm h-28 p-4">Elevate Your Online Presence:
+      <br></br>
+            <hr className='bg-white w-full my-2'></hr>
+            <h1 className= "text-3xl text-sky-200 mx-4 my-4"> Tailored Solutions for Your Digital Success
+
+
+
+
+</h1>
+      </p>     
           </div>
 
       </div>
