@@ -11,7 +11,58 @@ import i8 from '../../assets/portfolio/innomatricsSite.jpg'
 import i9 from '../../assets/portfolio/billingSoft.jpg'
 
 import doodle from '../../assets/portfolioBg.jpg' 
+
+
+
 const Portfolio = () => {
+  const data = [
+    {
+      color : "orange",
+      image: i1,
+      title: "Bint Al Hind",
+      desc: "An incense stick e commerse website displayinng their products adn allowing client to reach out to them for contact."
+    },
+    {image: i2,
+      color : "sky",
+      title: "KK Industries",
+      desc: "An online website for a fabricaionn industry with description and access to their services."
+    },
+    { image: i3,
+      color : "violet",
+      title: "Infinty Travels",
+      desc: "A travels and transportation business with features to booka ride and more."
+    },
+      { image: i4,
+        color : "rose",
+      title: "Poke Store",
+      desc: "A client side web design for an online Poke dtore owned by an European client."
+    },
+    { image: i5,
+      color : "amber",
+      title: "Alwyn Packers & Movers    ",
+      desc: "A Packers and movers website with features to contact; view videos and avail services."
+    },
+    { image: i6,
+      color : "indigo",
+      title: "Play Pawws",
+      desc: "Online business website for kid's play zone arena with subscription features."
+    },
+    { image: i7,
+      color : "red",
+      title: "Silverline Tours & Travels",
+      desc: "A travels and tours company whose business website was built using cutting edge tech and making it user centric."
+      },
+    { image: i8,
+      color : "yellow",
+      title: "Innomatrics Technologies",
+      desc: "A client side business wensite for a tech consultant company."
+    },
+    { image: i9,
+      color : "green",
+      title: "Innomatrics Billing Software",
+      desc: "A Full stack billing software/app to track and generate invoice for clients."
+    },
+  ]
   return (
     <>
     
@@ -38,8 +89,6 @@ const Portfolio = () => {
     
 </div>
 
-{/* 
-    style={{backgroundImage: `url(${doodle})`}} */}
 
     <div className='bg-black p-5 md:p-28'>
 
@@ -52,98 +101,26 @@ const Portfolio = () => {
        >
       <div className="grid grid-cols-1 md:grid-cols-3  gap-8 ">
         {/* Card 1 */}
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-6/7 p-6
-        hover:bg-orange-400 hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out">
-          <img src= {i1} alt="Placeholder" className="w-full rounded h-1/2" />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Bint Al Hind </h3>
-            <p className="text-gray-700 text-sm">An incense stick e commerse website displayinng their products adn allowing client to reach out 
-            to them for contact.</p>
-          </div>
-        </div>
-        {/* Card 2 */}
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-6/7 p-6
-        hover:bg-blue-400 hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out">
-          <img src={i2} alt="Placeholder" className="w-full h-1/2" />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">KK Industries</h3>
-            <p className="text-gray-700 text-sm">An online website for a fabricaionn industry with description and access to their services.</p>
-          </div>
-        </div>
-        {/* Card 3 */}
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-6/7 p-6
-        hover:bg-amber-400 hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out">
-          <img src={i3} alt="Placeholder" className="w-full h-1/2" />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Infinty Travels</h3>
-            <p className="text-gray-700 text-sm">A travels and transportation business with features to booka ride and more.</p>
-          </div>
-        </div>
-        {/* Card 4 */}
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-6/7 p-6
-        hover:bg-blue-400 hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out">
-          <img src={i4} alt="Placeholder" className="w-full h-1/2" />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Poke Store</h3>
-            <p className="text-gray-700 text-sm">A client side web design for an online Poke dtore owned by an European client.</p>
-          </div>
-        </div>
+        {
+          data.map((item,index )=> (
+            <div key={index} className={`bg-white rounded-lg shadow-lg shadow-slate-500 overflow-hidden h-96 
+        hover:bg-${item.color}-400 hover:transform hover:scale-105
+              hover:shadow-lg transition duration-300 ease-in-out`}>
+  
 
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-6/7 p-6
-        hover:bg-amber-400 hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out">
-          <img src={i5} alt="Placeholder" className="w-full h-1/2" />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Alwyn Packers & Movers</h3>
-            <p className="text-gray-700 text-sm">A Packers and movers website with features to contact; view videos and avail services.</p>
-          </div>
-        </div>
 
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-6/7 p-6
-        hover:bg-orange-400 hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out">
-          <img src={i6} alt="Placeholder" className="w-full h-1/2" />
+          <img src= {item.image} alt="Placeholder" className="w-full rounded h-2/3" />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Play Pawws</h3>
-            <p className="text-gray-700 text-sm">Online business website for kid's play zone arena with subscription features.</p>
+            <h3 className="text-xl text-black font-semibold mb-2">{item.title} </h3>
+            <p className="text-gray-700 text-sm">.{item.desc}</p>
           </div>
         </div>
-
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-6/7 p-6
-        hover:bg-amber-400 hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out">
-          <img src={i7} alt="Placeholder" className="w-full h-1/2" />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Silverline Tours & Travels</h3>
-            <p className="text-gray-700 text-sm">A travels and tours company whose business website was built using cutting edge tech and making it 
-            user centric.</p>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-6/7 p-6
-        hover:bg-orange-400 hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out">
-          <img src={i8} alt="Placeholder" className="w-full h-1/2" />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Innomatrics Technologies</h3>
-            <p className="text-gray-700 text-sm">A client side business wensite for a tech consultant company.</p>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-6/7 p-6
-        hover:bg-blue-400 hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out">
-          <img src={i9} alt="Placeholder" className="w-full h-1/2" />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Innomatrics Billing Software</h3>
-            <p className="text-gray-700 text-sm">A Full stack billing software/app to track and generate invoice for clients.</p>
-          </div>
-        </div>
-      </div>
+          ))
+        }
+        
+        
+        
+              </div>
     </div>
 
     </div>
