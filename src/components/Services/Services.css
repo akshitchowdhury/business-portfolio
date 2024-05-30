@@ -1,5 +1,5 @@
-.service-section {
-    height: 100vh; /* Adjust height as needed */
+.Services {
+    height: 80vh; /* Adjust height as needed */
     /* background-image: url('../../assets/serviceBg.jpg'); */
 
     background-size: cover;
@@ -11,7 +11,7 @@
     
     padding: 2%;
     width: 100%;
-    
+     
 }
 
 .carousel img{

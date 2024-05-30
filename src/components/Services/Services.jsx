@@ -54,7 +54,7 @@ const Services = () => {
 
   return (
     <>
-      <div className="Services h-screen md:h-screen grayscale">
+      <div className="Services  grayscale">
       <div
       className="text-white md:absolute  
       transition ease-in-out duration-300 

@@ -61,8 +61,9 @@ function Navbar() {
         <h1 className=" mx-20 text-lg text-white"> Pratikshit Chowdhury</h1>
       </div>
       <List>
-        <Link to="/">
-          <ListItemButton>
+        <Link to="/"> 
+          <ListItemButton
+          >
             <ListItem>
               <ListItemIcon>
                 <HomeIcon style={{ color: "white" }} />
@@ -70,14 +71,17 @@ function Navbar() {
 
               <ListItemText
                 primary={"Home"}
-                className="text-white hover:text-amber-300 transition ease-in-out duration-300"
+                className="text-white hover:text-amber-300 
+                transition ease-in-out duration-300
+                hover:scale-125"
               />
             </ListItem>
           </ListItemButton>
         </Link>
 
         <Link to="/about">
-          <ListItemButton>
+          <ListItemButton
+          >
             <ListItem>
               <ListItemIcon>
                 <Person style={{ color: "white" }} />
@@ -85,28 +89,30 @@ function Navbar() {
 
               <ListItemText
                 primary={"About"}
-                className="text-white hover:text-amber-300 transition ease-in-out duration-300"
+                className="text-white hover:text-amber-300 transition ease-in-out duration-300 hover:scale-125"
               />
             </ListItem>
           </ListItemButton>
         </Link>
 
         <Link to="/services">
-          <ListItemButton>
+          <ListItemButton
+          >
             <ListItem>
               <ListItemIcon>
                 <Code style={{ color: "white" }} />
               </ListItemIcon>
               <ListItemText
                 primary={"Services"}
-                className="text-white hover:text-amber-300 transition ease-in-out duration-300"
+                className="text-white hover:text-amber-300 transition ease-in-out duration-300 hover:scale-125"
               />
             </ListItem>
           </ListItemButton>
         </Link>
 
         <Link to="/portfolio">
-          <ListItemButton>
+          <ListItemButton
+          >
             <ListItem>
               <ListItemIcon>
                 <Collections style={{ color: "white" }} />
@@ -114,7 +120,7 @@ function Navbar() {
 
               <ListItemText
                 primary={"Portfolio"}
-                className="text-white hover:text-amber-300 transition ease-in-out duration-300"
+                className="text-white hover:text-amber-300 transition ease-in-out duration-300 hover:scale-125"
               />
             </ListItem>
           </ListItemButton>
@@ -132,12 +138,13 @@ function Navbar() {
         ].map((item, index) => (
           <ListItem style={{ marginLeft: "9%" }} key={index} disablePadding>
             <Link to={item.link}>
-              <ListItemButton>
+              <ListItemButton
+              >
                 <ListItemIcon style={{ color: "white" }}>
                   {item.icon}
                 </ListItemIcon>
                 <ListItemText
-                  className="text-white hover:text-amber-300 transition ease-in-out duration-300"
+                  className="text-white hover:text-amber-300 transition ease-in-out duration-300 hover:scale-125"
                   primary={item.text}
                 />
               </ListItemButton>
