@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+import { BackgroundBeams } from "../ui/background-beams";
+import { AuroraBackground } from "../ui/aurora-background";
 import c1 from "../../assets/node2.png";
 import c2 from "../../assets/react.png";
 import c3 from "../../assets/express.png";
@@ -54,6 +58,7 @@ const Services = () => {
 
   return (
     <>
+    
       <div className="Services  grayscale">
       <div
       className="text-white md:absolute  
@@ -76,7 +81,7 @@ const Services = () => {
           </div>
 
       </div>
-
+      
       <div
           className="BgDiv relative flex flex-col 
           bg-black
@@ -116,7 +121,21 @@ const Services = () => {
 
 
       </div>
+      <BackgroundBeams/>
       </div>
+      {/* <AuroraBackground>
+      <motion.div
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="relative flex flex-col gap-4 items-center justify-center px-4"
+      >
+      </motion.div>
+      </AuroraBackground> */}
     </>
   );
 };

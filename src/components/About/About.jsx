@@ -1,6 +1,7 @@
 
 import React from "react";
 import propic from "../../assets/profile.jpg";
+import { BackgroundBeams } from "../ui/background-beams";
 
 const About = () => {
   return (
@@ -42,6 +43,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <BackgroundBeams/>
     </>
   );
 };
