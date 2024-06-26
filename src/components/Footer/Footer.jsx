@@ -89,7 +89,7 @@ const Footer = () => {
 
       <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 font-semibold dark:text-gray-300 
-        mx-96 sm:text-center">© 2024 <a href="https://flowbite.com/">Akshit_Chowdhury</a>. All Rights Reserved.</span>
+        mx-96 sm:text-center">© 2024 <a href="https://business-portfolio-eta.vercel.app/">Akshit_Chowdhury</a>. All Rights Reserved.</span>
         
       </div>
     </footer>
