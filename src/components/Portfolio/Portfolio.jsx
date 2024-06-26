@@ -7,7 +7,7 @@ import i4 from "../../assets/portfolio/i6.jpg";
 import i5 from "../../assets/portfolio/solar-fintech.jpg";
 import i6 from "../../assets/portfolio/playpaws.jpg";
 import i7 from "../../assets/portfolio/silveLine2.jpg";
-import i8 from "../../assets/portfolio/innomatricsSite.jpg";
+import i8 from "../../assets/portfolio/innomatricsSite2.jpg";
 import i9 from "../../assets/portfolio/billingSoft.jpg";
 import i10 from "../../assets/portfolio/casino-game.jpg";
 
@@ -40,7 +40,7 @@ const Portfolio = () => {
       image: i4,
       color: "rose",
       url: "https://github.com/akshitchowdhury/Poke_app.git",
-      gitUrl: "",
+      gitUrl: "https://poke-app-delta.vercel.app/",
       title: "Poke Store",
       desc: "A client side web design for an online Poke dtore owned by an European client.",
     },
@@ -71,7 +71,7 @@ const Portfolio = () => {
     {
       image: i8,
       color: "yellow",
-      url: "innomatricstech.com",
+      url: "https://www.innomatricstech.com/",
       gitUrl: "https://github.com/akshitchowdhury/Innomatrics_Site.git",
       title: "Innomatrics Technologies",
       desc: "A client side business wensite for a tech consultant company.",
