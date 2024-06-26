@@ -16,9 +16,25 @@ import WebDesign from "./components/Services/Inno Services/WebDesign";
 import AppDev from "./components/Services/Inno Services/Appdev";
 import Portfolio from "./components/Portfolio/Portfolio";
 import SocialIcons from "./components/Social Icons/SocialIcons";
+import Loading from "./components/Loading/Loading";
+import { useEffect, useState } from "react";
 
 
 function App() {
+  const [loading, setLoading] = useState(true);
+useEffect(()=>{
+  setTimeout(() => {
+    
+  setLoading(false)
+  }, 2000);
+},[])
+
+  if (loading) {
+    return <div>
+        <Loading />
+    </div>;
+}
+
   return (
     <div className="App overflow-clip ">
     

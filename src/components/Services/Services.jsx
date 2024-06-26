@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
 import { BackgroundBeams } from "../ui/background-beams";
-import { AuroraBackground } from "../ui/aurora-background";
 import c1 from "../../assets/node2.png";
 import c2 from "../../assets/react.png";
 import c3 from "../../assets/express.png";
@@ -16,23 +14,13 @@ import c9 from "../../assets/next.webp";
 import "./Services.css";
 import { Carousel } from "flowbite-react";
 import ImageCardContainer from "./Carousel/ImageCardContainer";
-import { Link } from "react-router-dom";
 
-// import image from '../../assets/image1.jpg'
-
-const Services = () => {
+const Services = () => { 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMoving, setIsMoving] = useState(true);
 
   const images = [c1, c2, c3];
-  // const images = [
-  //   'https://via.placeholder.com/300x200?text=Image+1',
-  //   'https://via.placeholder.com/300x200?text=Image+2',
-  //   'https://via.placeholder.com/300x200?text=Image+3',
-  //   'https://via.placeholder.com/300x200?text=Image+4',
-  //   'https://via.placeholder.com/300x200?text=Image+5',
-  //   'https://via.placeholder.com/300x200?text=Image+6'
-  // ];
+
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
@@ -155,19 +143,7 @@ const Services = () => {
         </div>
         
       </div>
-      {/* <AuroraBackground>
-      <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
-      >
-      </motion.div>
-      </AuroraBackground> */}
+      
     </>
   );
 };

@@ -8,21 +8,17 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+
 import HomeIcon from "@mui/icons-material/Home";
-import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 import RememberMeIcon from "@mui/icons-material/RememberMe";
 import {
   Code,
   Collections,
   Contacts,
   Person,
-  AccountCircle,
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
-import About from "../About/About";
-import Home from "../Home/Home";
+
 import pic from "../../assets/profile.jpg";
 import "./Navbar.css";
 

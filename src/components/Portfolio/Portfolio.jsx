@@ -19,13 +19,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Portfolio = () => {
   const data = [
-    // {
-    //   color: "orange",
-    //   image: i1,
-    //   url: "" ,
-    //   title: "Bint Al Hind",
-    //   desc: "An incense stick e commerse website displayinng their products adn allowing client to reach out to them for contact.",
-    // },
+  
     {
       image: i2,
       color: "sky",
