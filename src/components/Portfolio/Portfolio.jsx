@@ -30,7 +30,7 @@ const Portfolio = () => {
       image: i2,
       color: "sky",
       url: "https://www.kkindustrie.com/" ,
-      gitUrl:"",
+      gitUrl:"https://github.com/akshitchowdhury/fabrication.git",
       title: "KK Industries",
       desc: "An online website for a fabricaionn industry with description and access to their services.",
     },
@@ -38,14 +38,14 @@ const Portfolio = () => {
       image: i3,
       color: "violet",
       url: "https://sri-ambika-plast.vercel.app/" ,
-      gitUrl:"",
+      gitUrl:"https://github.com/akshitchowdhury/SriAmbikaPlast.git",
       title: "Shri Ambika Plast",
       desc: "A Pipe manufacturer business with their business products and quality description.",
     },
     {
       image: i4,
       color: "rose",
-      url: "" ,
+      url: "https://github.com/akshitchowdhury/Poke_app.git" ,
       gitUrl:"",
       title: "Poke Store",
       desc: "A client side web design for an online Poke dtore owned by an European client.",
@@ -54,7 +54,7 @@ const Portfolio = () => {
       image: i5,
       url: "https://solar-fintech.vercel.app/" ,
       color: "amber",
-      gitUrl:"",
+      gitUrl:"https://github.com/akshitchowdhury/solar_fintech.git",
       title: "Solar Fintech",
       desc: "A Solar Fintech based startup website designed as per client's requirements",
     },
@@ -62,7 +62,7 @@ const Portfolio = () => {
       image: i6,
       color: "indigo",
       url: "https://playpawws.com/" ,
-      gitUrl:"",
+      gitUrl:"https://github.com/akshitchowdhury/playPaw.git",
       title: "Play Pawws",
       desc: "Online business website for kid's play zone arena with subscription features.",
     },
@@ -70,7 +70,7 @@ const Portfolio = () => {
       image: i7,
       color: "red",
       url: "https://silverlinetoursandtravels.com/" ,
-      gitUrl:"",
+      gitUrl:"https://github.com/akshitchowdhury/silver_travels.git",
       title: "Silverline Tours & Travels",
       desc: "A travels and tours company whose business website was built using cutting edge tech and making it user centric.",
     },
@@ -78,7 +78,7 @@ const Portfolio = () => {
       image: i8,
       color: "yellow",
       url: "innomatricstech.com" ,
-      gitUrl:"",
+      gitUrl:"https://github.com/akshitchowdhury/Innomatrics_Site.git",
       title: "Innomatrics Technologies",
       desc: "A client side business wensite for a tech consultant company.",
     },
@@ -86,7 +86,7 @@ const Portfolio = () => {
       image: i9,
       color: "indigo",
       url: "https://inno-bill-client.vercel.app/" ,
-      gitUrl:"",
+      gitUrl:"https://github.com/akshitchowdhury/Inno_Billing.git ",
       title: "Innomatrics Billing Software",
       desc: "A Full stack billing software/app to track and generate invoice for clients.",
     },
@@ -94,7 +94,7 @@ const Portfolio = () => {
       image: i10,
       color: "red",
       url: "https://casino-game-ochre.vercel.app/" ,
-      gitUrl:"",
+      gitUrl:"https://github.com/akshitchowdhury/Casino-game.git",
       title: "Casino ree play game",
       desc: "A Casino based point system game created using React.",
     },
@@ -161,7 +161,7 @@ const Portfolio = () => {
                   </h3>
                   <p className="text-gray-700 text-sm">.{item.desc}</p>
                   </div>
-                  <Link to={gitUrl} target="_blank">
+                  <Link to={item.gitUrl} target="_blank">
                   <FontAwesomeIcon icon={faGithub}/>
                   </Link>
                 </div>

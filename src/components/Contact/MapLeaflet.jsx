@@ -1,63 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import './MapLeaflet.css'; // Create a separate CSS file for styling
-import L from 'leaflet';
+// MapLeaflet.js
+import React from 'react';
 
 const MapLeaflet = () => {
-  const fixedLocation = [12.9163043,77.6076341]; // Fixed location coordinates
-  const [userLocation, setUserLocation] = useState(null);
-  const redIcon = new L.Icon({
-    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-  });
-  const blueIcon = new L.Icon({
-    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-});
-
-  useEffect(() => {
-    // Get user's geolocation
-    navigator.geolocation.getCurrentPosition(
-      (geoLocation) => {
-        const { latitude, longitude } = geoLocation.coords;
-        setUserLocation({ lat: latitude, lng: longitude }); 
-      },
-      (error) => console.error('Error getting geolocation:', error),
-      { enableHighAccuracy: true }
-    );
-  }, []); // Empty dependency array ensures this effect runs only once on component mount
-
-  const handleMarkerClick = () => {
-    const [lat, lng] = fixedLocation;
-    const description = "Description of the fixed location";
-
-    // Open Google Maps URL in a new tab
-    window.open(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}&query_place_id=${description}`);
-  };
-
   return (
-    <MapContainer
-      center={fixedLocation} // Set the center to the fixed location
-      zoom={13}
-      className="custom-map-container 
-      "
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      <Marker position={fixedLocation} icon={redIcon} eventHandlers={{ click: handleMarkerClick }}>
-        <Popup>Fixed Location</Popup>
-      </Marker>
-      {userLocation && (
-        <Marker position={userLocation} icon={blueIcon}>
-          <Popup>User Location</Popup>
-        </Marker>
-      )}
-    </MapContainer>
+    <div className="w-full h-96">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1357417352647!2d77.60496537411908!3d12.898991916467947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae152acb0882b9%3A0xde34500a96e556!2sMakana%20Serenity%20Rentmystay!5e0!3m2!1sen!2sin!4v1719416816168!5m2!1sen!2sin"
+        width="100%"
+        
+        className='
+        h-[270px] md:h-full'
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   );
 };
 

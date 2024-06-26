@@ -46,7 +46,7 @@ const ContactComponent = forwardRef((props,ref) => {
   h-auto md:h-auto'>
   <h2 className="connect w-full lg:w-3/4 px-4 lg:p-4 lg:h-full rounded-lg
   text-white
-    text-3xl md:text-4xl font-bold mb-4 text-center md:text-left mx-auto">Let's connect via this form!</h2>
+    text-3xl md:text-4xl font-bold mb-4 text-center md:text-left my-4 mx-auto">Let's connect via this form!</h2>
 
     <div className="contactContent flex flex-row md:flex-col lg:flex-row sm:flex-row gap-6" 
     >
@@ -55,9 +55,9 @@ const ContactComponent = forwardRef((props,ref) => {
 
 
     <div className="form w-full
-    
+      
      md:w-1/2 lg:w-1/2 px-4 lg:p-4 lg:h-full h-auto md:h-auto rounded-lg shadow-2xl">
-  <h2 className="contactUs text-2xl font-bold mb-4">Contact Us</h2>
+  <h2 className="contactUs text-xl text-center text-white font-bold mb-4" >Get in Touch!</h2>
   <form className="space-y-2   md:-my-0" onSubmit={handleSubmit}>
     <div>
       <label htmlFor="name" className="block font-semibold mb-1">Name</label>
