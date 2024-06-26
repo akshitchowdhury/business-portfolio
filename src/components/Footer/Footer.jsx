@@ -1,48 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css'
-import MapLeaflet from '../Contact/MapLeaflet';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
+
 import 'leaflet/dist/leaflet.css';
 import './Footer.css';
 
 const Footer = () => {
-  const fixedLocation = [13.0270199,77.6334501]; // Fixed location coordinates
-  const [userLocation, setUserLocation] = useState(null);
 
-  const redIcon = new L.Icon({
-    iconUrl:
-      "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png",
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-  });
-
-  useEffect(() => {
-    // Get user's geolocation
-    navigator.geolocation.getCurrentPosition(
-      (geoLocation) => {
-        const { latitude, longitude } = geoLocation.coords;
-        setUserLocation({ lat: latitude, lng: longitude });
-      },
-      (error) => console.error("Error getting geolocation:", error),
-      { enableHighAccuracy: true }
-    );
-  }, []);
-
-  const handleMarkerClick = () => {
-    const [lat, lng] = fixedLocation;
-    const description = "Description of the fixed location";
-
-    // Open Google Maps URL in a new tab
-    window.open(
-      `https://www.google.com/maps/search/?api=1&query=${lat},${lng}&query_place_id=${description}`
-    );
-  };
-
-
-
-
+  const handleClick = ()=>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   return (
     <footer className="footer">
@@ -64,19 +31,19 @@ const Footer = () => {
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Quick Links</h2>
             <ul className="Qlinks text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <Link to="/" className="navbar-links">Home</Link>
+                <Link to="/" onClick={handleClick} className="navbar-links">Home</Link>
               </li>
               <li className="mb-4">
-                <Link to="/about" className="navbar-links">About Us</Link>
+                <Link to="/about" onClick={handleClick} className="navbar-links">About Us</Link>
               </li>
               <li className="mb-4">
-                <Link to="/services" className="navbar-links">Services</Link>
+                <Link to="/services" onClick={handleClick} className="navbar-links">Services</Link>
               </li>
               <li className="mb-4">
-                <Link to="/portfolio" className="navbar-links">Portfolio</Link>
+                <Link to="/portfolio" onClick={handleClick} className="navbar-links">Portfolio</Link>
               </li>
               <li className="mb-4">
-                <Link to="/contact" className="navbar-links">Contact Me</Link>
+                <Link to="/contact" onClick={handleClick} className="navbar-links">Contact Me</Link>
               </li>
             </ul>
           </div>
@@ -84,19 +51,19 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
   <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Services</h2>
   <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
-    <Link to="/webdesign">
+    <Link onClick={handleClick} to="/webdesign">
     <li className="mb-4">
       Web Design
     </li>
     </Link>
 
-    <Link to="/webdev">
+    <Link to="/webdev" onClick={handleClick}>
     <li className="mb-4">
       Web Development
     </li>
     </Link>
 
-    <Link to="/appdev">
+    <Link to="/appdev" onClick={handleClick}>
     <li className="mb-4">
       App Development
     </li>

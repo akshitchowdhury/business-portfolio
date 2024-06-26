@@ -33,6 +33,9 @@ function Navbar() {
     setOpen(newOpen);
   };
 
+  const handleClick = ()=>{
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
   const DrawerList = (
     <Box
       sx={{
@@ -61,7 +64,8 @@ function Navbar() {
         <h1 className=" mx-20 text-lg text-white"> Pratikshit Chowdhury</h1>
       </div>
       <List>
-        <Link to="/"> 
+        <Link  onClick={handleClick} to
+="/"> 
           <ListItemButton
           >
             <ListItem>
@@ -79,7 +83,8 @@ function Navbar() {
           </ListItemButton>
         </Link>
 
-        <Link to="/about">
+        <Link  onClick={handleClick} to
+="/about">
           <ListItemButton
           >
             <ListItem>
@@ -95,7 +100,8 @@ function Navbar() {
           </ListItemButton>
         </Link>
 
-        <Link to="/services">
+        <Link  onClick={handleClick} to
+="/services">
           <ListItemButton
           >
             <ListItem>
@@ -110,7 +116,8 @@ function Navbar() {
           </ListItemButton>
         </Link>
 
-        <Link to="/portfolio">
+        <Link  onClick={handleClick} to
+="/portfolio">
           <ListItemButton
           >
             <ListItem>
@@ -137,7 +144,8 @@ function Navbar() {
           },
         ].map((item, index) => (
           <ListItem style={{ marginLeft: "9%" }} key={index} disablePadding>
-            <Link to={item.link}>
+            <Link  onClick={handleClick} to
+={item.link}>
               <ListItemButton
               >
                 <ListItemIcon style={{ color: "white" }}>
